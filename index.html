@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mes Simulations</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: #f3f5f9;
+      color: #1f2937;
+    }
+    header {
+      background: #1e3a8a;
+      color: #fff;
+      text-align: center;
+      padding: 40px 16px;
+    }
+    header h1 { margin: 0 0 8px; font-size: 2rem; }
+    header p { margin: 0; opacity: .85; }
+    main {
+      max-width: 900px;
+      margin: 32px auto;
+      padding: 0 16px;
+      display: grid;
+      gap: 16px;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    }
+    a.card {
+      display: block;
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: 0 1px 4px rgba(0,0,0,.1);
+      transition: transform .15s, box-shadow .15s;
+    }
+    a.card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 16px rgba(0,0,0,.15);
+    }
+    .tag {
+      font-size: .75rem;
+      font-weight: 600;
+      color: #1e3a8a;
+      letter-spacing: .05em;
+    }
+    .card h2 { margin: 6px 0 4px; font-size: 1.15rem; }
+    .card p { margin: 0; color: #6b7280; font-size: .9rem; }
+    footer {
+      text-align: center;
+      color: #6b7280;
+      padding: 24px 16px 40px;
+      font-size: .9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mes Simulations</h1>
+    <p>Cliquez sur une simulation pour la lancer.</p>
+  </header>
+
+  <main>
+    <a class="card" href="bgp/HTML5/">
+      <span class="tag">SIMULATION 1</span>
+      <h2>BGP</h2>
+      <p>Protocole de routage BGP</p>
+    </a>
+
+    <a class="card" href="redistribution/HTML5/">
+      <span class="tag">SIMULATION 2</span>
+      <h2>Redistribution</h2>
+      <p>Redistribution de routes</p>
+    </a>
+
+    <a class="card" href="tp1-1/HTML5/">
+      <span class="tag">SIMULATION 3</span>
+      <h2>TP1</h2>
+      <p>Travaux pratiques 1</p>
+    </a>
+
+    <a class="card" href="tp1-2/HTML5/">
+      <span class="tag">SIMULATION 4</span>
+      <h2>TP1 (suite)</h2>
+      <p>Travaux pratiques 1, partie 2</p>
+    </a>
+
+    <a class="card" href="tp2/HTML5/">
+      <span class="tag">SIMULATION 5</span>
+      <h2>TP2</h2>
+      <p>Travaux pratiques 2</p>
+    </a>
+  </main>
+
+  <footer>5 simulations interactives</footer>
+
+</body>
+</html>
